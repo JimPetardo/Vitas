@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D1946E86-F6BE-84C6-ACE8-4A119BF302CD}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_3;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Achievement.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\DummyClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\BasicApi\OnStateLoadedListener.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\OurUtils\Logger.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\OurUtils\Misc.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\AchievementBank.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\AndroidClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\AndroidRtmpClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\AndroidTbmpClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\GameHelperManager.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\JavaConsts.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\JavaUtil.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\NoopProxy.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\Android\OnStateResultProxy.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\iOS\IOSClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\iOS\IOSRtmpClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\iOS\MiniJSON.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\Platforms\iOS\iOSTbmpClient.cs" />
+     <Compile Include="Assets\Giochino\GooglePlayGames\PluginVersion.cs" />
+     <Compile Include="Assets\Giochino\scripts\Achievements.cs" />
+     <Compile Include="Assets\Giochino\scripts\AspectUtility.cs" />
+     <Compile Include="Assets\Giochino\scripts\CharController.cs" />
+     <Compile Include="Assets\Giochino\scripts\FollowChar.cs" />
+     <Compile Include="Assets\Giochino\scripts\GameState.cs" />
+     <Compile Include="Assets\Giochino\scripts\GoMainMenu.cs" />
+     <Compile Include="Assets\Giochino\scripts\LaunchGame.cs" />
+     <Compile Include="Assets\Giochino\scripts\MaxScore.cs" />
+     <Compile Include="Assets\Giochino\scripts\NotificationCenter.cs" />
+     <Compile Include="Assets\Giochino\scripts\Ranking.cs" />
+     <Compile Include="Assets\Giochino\scripts\Score.cs" />
+     <Compile Include="Assets\Giochino\scripts\ScoreInBlock.cs" />
+     <Compile Include="Assets\Giochino\scripts\ScrollBackground.cs" />
+     <Compile Include="Assets\Giochino\scripts\TitleScrollBackground.cs" />
+     <Compile Include="Assets\Giochino\scripts\UpdateGameOverValues.cs" />
+     <Compile Include="Assets\Giochino\scripts\blockGenerator.cs" />
+     <Compile Include="Assets\Giochino\scripts\eraseBlocks.cs" />
+     <Compile Include="Assets\Giochino\scripts\itemGenerator.cs" />
+     <Compile Include="Assets\Giochino\scripts\itemScore.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\BlocksPlaneGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\MovementManager.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\RandomBlocksGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\Scripts\PassthroughEnabler.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\SystemWipeRecognizerListener.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\SystemWipeRecognizerNative.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\AerodynamicLeaf.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ChangeMaterialOnGrab.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\CubeWave.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\FloatingStem.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\FlowerBloom.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\FlowerGrower.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\HandCycler.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\HandDetector.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\IgnoreInternalCollisions.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ImageRetrieverTypes.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ParticlesOnCollision.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\PetalMesh.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\PressAnyKeyToReset.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\RecordingControls.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ResetCollisionsOnBreak.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\StemMesh.cs" />
+     <Compile Include="Assets\LeapMotion\DemoResources\Scripts\VoxelSheet.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\ApiDemo\AddRemoveBodies.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\ApiDemo\HoldingCallbacks.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Body.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Holding.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Math.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Native.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Scene.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\DllWrapper\Shape.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\InteractionSceneSetup.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\LeapInteraction.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\UnityIntegration\AddRemoveBodyUtil.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\UnityIntegration\HandViewer.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\UnityIntegration\MathWithUnity.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\UnityIntegration\TransformSyncUtil.cs" />
+     <Compile Include="Assets\LeapMotion\InteractionUtils (alpha)\Scripts\UnityIntegration\UnityUtil.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\HandController.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\DebugFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\DebugHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\FingerModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\HandModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\PolyFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\PolyHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RiggedFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RiggedHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\RigidHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalFinger.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Hands\SkeletalHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\LeapImageRetriever.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Tools\ToolModel.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\ConfidenceTransparency.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\DisconnectionNotice.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\FitHeightToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\GrabbableObject.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\GrabbingHand.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapRecorder.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\MagneticPinch.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\TriggerDrawing.cs" />
+     <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\MainMenu\menuIniziale.cs" />
+     <Compile Include="Assets\MirrorReflection.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRMainMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\Stelle_Test\colliderS.cs" />
+     <Compile Include="Assets\Stelle_Test\generatoreFig.cs" />
+     <Compile Include="Assets\Stelle_Test\trakingManoStelle.cs" />
+     <Compile Include="Assets\Stelle_Test\trakingManoStelleDestra.cs" />
+     <Compile Include="Assets\Stelle_Test\trakingManoStelleSinistra.cs" />
+     <Compile Include="Assets\bart\script\Bart.cs" />
+     <Compile Include="Assets\bart\script\provaCollaiderBart.cs" />
+     <Compile Include="Assets\bart\script\startMenu.cs" />
+     <Compile Include="Assets\bart\script\trakingManoBartDestra.cs" />
+     <Compile Include="Assets\bart\script\trakingManoBartSinistra.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\CharControllerLeap.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressE.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressEBart.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressEBoxandBlocks.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressECabinato.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressELego.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressEMirror.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\PressEStelle.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\Punteggio.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\SpawnCubiRandom.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\TornaHome.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\collisionForStat.cs" />
+     <Compile Include="Assets\blockandbox\Scripts\exit.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\BirdsBehavior.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\BoatBehavior.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\Butterfly.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\LightFlicker.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\RandomAnimationStart.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Scripts\ScrollUVs.cs" />
+     <Compile Include="Assets\blockandbox\Tuscany\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
+     <Compile Include="Assets\lego\script\ColliderLego.cs" />
+     <Compile Include="Assets\lego\script\provaCollaider.cs" />
+     <Compile Include="Assets\lego\script\spawnOggetti.cs" />
+     <Compile Include="Assets\mirror\CamRenderTo.cs" />
+     <Compile Include="Assets\mirror\RenderTextureFree.cs" />
+     <Compile Include="Assets\mirror\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-zh-rHK\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-sv\common_strings.xml" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ca\common_strings.xml" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRDistorted.shader" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\TransparentTerrain.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\admob_iap_style.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ms-rMY\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-de\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 3.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapRGBDistorted.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-es-rUS\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-zh-rCN\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ko\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 1.shader" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\proguard.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-hr\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\common_colors.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ru\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-am\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Particles\Shaders\Particle Alpha Blend_IgnoreFog.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\wallet_attrs.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-bg\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-in\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 5.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-lo-rLA\common_strings.xml" />
+     <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted_foreground.shader" />
+     <None Include="Assets\Giochino\Editor\template-AndroidManifest.txt" />
+     <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-sw\common_strings.xml" />
+     <None Include="Assets\LeapMotion\readme.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 6.shader" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\DoubleSided.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\MainLibProj\AndroidManifest.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-pt-rBR\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-en-rIN\common_strings.xml" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\AndroidManifest.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\BaseGameUtils\AndroidManifest.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\color\wallet_primary_text_holo_light.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-cs\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-et-rEE\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-fa\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-lt\common_strings.xml" />
+     <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_icon_light.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\wallet_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-th\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-pl\common_strings.xml" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_text_light.xml" />
+     <None Include="Assets\Giochino\Editor\template-GPGSParams.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-mn-rMN\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-en-rGB\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\color\common_signin_btn_text_light.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-vi\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-pt-rPT\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-be\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\maps_attrs.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-sl\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-nl\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-fi\common_strings.xml" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\wallet_styles.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ka-rGE\common_strings.xml" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\version.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ja\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ro\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-it\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-fr\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\BaseGameUtils\res\values\gamehelper_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\DoubleSided ButterFly.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-hi\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\admob_ads_attrs.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-af\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\AlphaTest-DiffuseDoublesided.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-hy-rAM\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-zh-rTW\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-sk\common_strings.xml" />
+     <None Include="Assets\Giochino\Editor\projsettings.txt" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-es\wallet_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 4.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-da\common_strings.xml" />
+     <None Include="Assets\istruzioniLog.txt" />
+     <None Include="Assets\blockandbox\Tuscany\Particles\Shaders\AddSmooth_Layer.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-zu\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-lv\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-tr\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 8.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-nb\common_strings.xml" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 2.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\README.txt" />
+     <None Include="Assets\LeapMotion\Resources\LeapRGBUndistorted.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-iw\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\Vertex color unlit 7.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-uk\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-tl\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-fr-rCA\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Particles\Shaders\Add_Layer.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-ar\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-sr\common_strings.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values\wallet_colors.xml" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-hu\common_strings.xml" />
+     <None Include="Assets\blockandbox\Tuscany\Models\Materials\AlphaTest-DiffuseBack.shader" />
+     <None Include="Assets\Giochino\Plugins\Android\google-play-services_lib\res\values-pt\common_strings.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>C:/Users/Enrico/Documents/All_in2/Assets/LeapCSharp.NET3.5.dll</HintPath>
+ </Reference>
+ <Reference Include="GPGSUtils">
+ <HintPath>C:/Users/Enrico/Documents/All_in2/Assets/Giochino/Plugins/GPGSUtils.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
