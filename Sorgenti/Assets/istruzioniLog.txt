@@ -1,0 +1,36 @@
+Bart
+Tab divide le colonne
+colonna 1 : Nuomero tentativo
+Colonna 2 : Tempo trascorso dallo start in secondi
+Colonna 3 : Fallito 0, Successo 1
+Colonna 4 : Posizione oggetto x in metri
+Colonna 5 : Posizione oggetto y in metri
+Colonna 6 : Oggetto toccato con mano sinistra 0, mano destra 1
+
+Blocks&Box
+Tab divide le colonne
+Colonna 1 : Numero tentativo
+Colonna 2 : Tempo trascorso dallo start in secondi
+Colonna 3 : Fallito 0, Successo 1
+Colonna 4 : Tempo trascorso dalla presa al rilascio in secondi
+
+LogHand
+Posizione del cubo salvato ogni 0.2 secondi, quando il cubo viene rilasciato si inserisce nel file una riga x=0 y=0 z=0 e si ferma il processo fino al prossimo cubo selezionato
+Colonna 1 : Posizione x cubo selezionato in metri
+Colonna 2 : Posizione y cubo selezionato in metri
+Colonna 3 : Posizione z cubo selezionato in metri
+
+
+TestStelle
+Tab divide le colonne
+Durante il test ci saranno tutti successi(terza colonna = 1) ovvero le stell che il soggetto riesce a cancellare
+alla fine del log sarà salvato l`elenco delle stelle rimaste con colonna 3 = 0 e tempo dallo start di fine test
+
+colonna 1 : Nuomero tentativo
+Colonna 2 : Tempo trascorso dallo start in secondi
+Colonna 3 : Fallito 0, Successo 1
+Colonna 4 : Posizione stella x in metri
+Colonna 5 : Posizione stella y in metri
+Colonna 6 : Oggetto toccato con mano sinistra 0, mano destra 1
+
+

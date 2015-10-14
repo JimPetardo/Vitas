@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8584a9c81633c964c81044aa08fc376c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - ButtonSound: {instanceID: 0}
+  - redBotton: {fileID: 123152, guid: 76b1a6850c8e89141bed489a8f8abac8, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
